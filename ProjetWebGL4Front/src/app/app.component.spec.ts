@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'projetgl4'`, () => {
+  it(`should have as title 'bascalni-front'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('projetgl4');
+    expect(app.title).toEqual('bascalni-front');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('projetgl4 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('bascalni-front app is running!');
   });
 });
