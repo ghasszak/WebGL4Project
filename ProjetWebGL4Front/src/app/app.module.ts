@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EventsService } from 'src/app/upcoming-events/events.service';
 import { TokenInterceptor } from './interceptors/login.interceptor';
@@ -15,6 +17,8 @@ import { AboutUsComponent } from './about-us/about-us/about-us.component';
 
 @NgModule({
   declarations: [
+    LoginComponent,
+    RegisterComponent,
     AboutUsComponent,
   ],
   imports: [
